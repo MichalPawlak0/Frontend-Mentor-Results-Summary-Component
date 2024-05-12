@@ -159,8 +159,16 @@ body {
   font-weight: 600;
   border-radius: 3rem;
   border: none;
-  background-color: hsl(224, 30%, 27%);
+  background: hsl(224, 30%, 27%);
   color: hsla(221, 100%, 96%, 97%);
+  cursor: pointer;
+}
+.button:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(120, 87, 255, 1) 0%,
+    rgba(46, 43, 233, 1) 100%
+  );
 }
 .attribution {
   font-size: 11px;
@@ -174,4 +182,23 @@ body {
 }
 .attribution a:hover {
   color: hsl(178, 100%, 40%);
+}
+
+@media screen and (max-width: 37em) {
+  body {
+    padding: 0;
+  }
+  .container {
+    border-radius: 0;
+    flex-direction: column;
+  }
+  .result {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: 2rem;
+  }
+  .summary {
+    width: 100%;
+  }
 }
