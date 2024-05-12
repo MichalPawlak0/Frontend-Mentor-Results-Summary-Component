@@ -1,0 +1,177 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 0.625em;
+}
+@font-face {
+  font-family: HankenGrotesk;
+  src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: HankenGroteskBold;
+  src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: HankenGroteskExtraBold;
+  src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf");
+  font-weight: 700;
+}
+body {
+  background-color: hsl(0, 0%, 94%);
+  font-family: HankenGrotesk;
+  padding: 20vh 10vw 0;
+  color: hsl(0, 0%, 8%);
+}
+.container {
+  max-width: 56rem;
+  background-color: #fff;
+  margin: 0 auto 1rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 5px 10px #eee;
+  display: flex;
+  overflow: hidden;
+}
+.result {
+  background: linear-gradient(
+    180deg,
+    rgba(120, 87, 255, 1) 0%,
+    rgba(46, 43, 233, 1) 100%
+  );
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+  border-radius: 2.5rem;
+}
+.result-title {
+  font-size: 18px;
+  color: hsla(241, 100%, 89%, 80%);
+  margin-bottom: 2.6rem;
+}
+.result-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 14rem;
+  height: 14rem;
+  margin-bottom: 2.4rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1) 0%,
+    hsla(241, 72%, 46%, 0) 100%
+  );
+}
+.score {
+  font-size: 4.8rem;
+  color: #fff;
+  font-weight: 700;
+}
+.of-hundred {
+  color: hsl(241, 100%, 75%);
+}
+.comment {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.comparison {
+  color: hsl(241, 100%, 85%);
+  font-size: 1.2rem;
+  text-align: center;
+}
+.summary {
+  padding: 3rem;
+  width: 52%;
+}
+.summary-title {
+  font-size: 1.8rem;
+  color: hsl(224, 30%, 27%);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.summary-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.6rem;
+  list-style-type: none;
+  margin-bottom: 2.85rem;
+}
+.summary-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background-color: hsla(0, 100%, 67%, 5%);
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+}
+.summary-detail:nth-of-type(2) {
+  background-color: hsla(39, 100%, 56%, 5%);
+}
+.summary-detail:nth-of-type(3) {
+  background-color: hsla(166, 100%, 37%, 5%);
+}
+.summary-detail:nth-of-type(4) {
+  background-color: hsla(234, 85%, 45%, 5%);
+}
+.summary-detail-text-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#reaction {
+  color: hsla(0, 100%, 67%, 80%);
+}
+#memory {
+  color: hsla(39, 100%, 56%, 80%);
+}
+#verbal {
+  color: hsla(166, 100%, 37%, 80%);
+}
+#visual {
+  color: hsla(234, 85%, 45%, 80%);
+}
+.skill-score {
+  font-weight: 600;
+  color: hsla(224, 30%, 27%, 42%);
+}
+.skill-score-bold {
+  font-weight: 700;
+  color: hsla(224, 30%, 27%, 100%);
+}
+.button {
+  width: 100%;
+  padding: 1.3rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 3rem;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: hsla(221, 100%, 96%, 97%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: hsl(178, 100%, 40%);
+}
