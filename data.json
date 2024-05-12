@@ -6,17 +6,17 @@
   },
   {
     "category": "Memory",
-    "score": 92,
+    "score": 50,
     "icon": "./assets/images/icon-memory.svg"
   },
   {
     "category": "Verbal",
-    "score": 61,
+    "score": 89,
     "icon": "./assets/images/icon-verbal.svg"
   },
   {
     "category": "Visual",
-    "score": 72,
+    "score": 66,
     "icon": "./assets/images/icon-visual.svg"
   }
 ]

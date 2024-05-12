@@ -10,6 +10,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <script src="script.js" defer></script>
     <title>Results summary component</title>
   </head>
   <body>
@@ -17,10 +18,10 @@
       <div class="result">
         <div class="result-title">Your Result</div>
         <div class="result-display">
-          <div class="score">76</div>
+          <div class="score" id="score">76</div>
           <div class="of-hundred">of 100</div>
         </div>
-        <div class="comment">Great</div>
+        <div class="comment" id="comment">Great</div>
         <div class="comparison">
           You scored higher than 65% of the people who have taken these tests.
         </div>
@@ -35,7 +36,7 @@
             </div>
             <div class="summary-detail-score-box">
               <div class="skill-score">
-                <span class="skill-score-bold">80</span> / 100
+                <span class="skill-score-bold" id="reactionScore">80</span> / 100
               </div>
             </div>
           </li>
@@ -46,7 +47,7 @@
             </div>
             <div class="summary-detail-score-box">
               <div class="skill-score">
-                <span class="skill-score-bold">92</span> / 100
+                <span class="skill-score-bold" id="memoryScore">92</span> / 100
               </div>
             </div>
           </li>
@@ -57,7 +58,7 @@
             </div>
             <div class="summary-detail-score-box">
               <div class="skill-score">
-                <span class="skill-score-bold">61</span> / 100
+                <span class="skill-score-bold" id="verbalScore">61</span> / 100
               </div>
             </div>
           </li>
@@ -68,7 +69,7 @@
             </div>
             <div class="summary-detail-score-box">
               <div class="skill-score">
-                <span class="skill-score-bold">72</span> / 100
+                <span class="skill-score-bold" id="visualScore">72</span> / 100
               </div>
             </div>
           </li>
